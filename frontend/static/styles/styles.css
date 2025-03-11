@@ -1,0 +1,65 @@
+
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #6be7fa, #bc88e8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos del contenedor de login */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Estilos del formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.forgot-password {
+    color: #326cd6;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-login {
+    background-color: #bc88e8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}

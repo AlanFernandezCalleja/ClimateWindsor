@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Interface</title>
+  <link rel="stylesheet" href="/frontend/static/styles/styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <form>
+      <div class="form-group">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <div class="remember-me">
+          <input type="checkbox" id="remember-me" name="remember-me">
+          <label for="remember-me">Recordarme</label>
+        </div>
+        <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+      </div>
+      <button type="submit" class="btn-login">Iniciar Sesión</button>
+    </form>
+  </div>
+</body>
+</html>
