@@ -1,9 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Outfit:wght@100..900&display=swap');
 
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #6be7fa, #bc88e8);
+    font-family: "Outfit", Arial, sans-serif;
+    background: linear-gradient(to bottom, #0477fc, #bad8ff);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,49 +13,67 @@ body {
 
 /* Estilos del contenedor de login */
 .login-container {
+    display: flex;
+    flex-direction: column;
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 40px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 300px;
-}
+    width: 365px;
+    justify-content: center;
+    align-items: center;
 
+    animation: zoomIn 0.5s ease-out forwards; /* Aplica la animación */
+    opacity: 0; /* Inicialmente invisible para que la animación funcione */
+    transform: scale(0.5); /* Comienza más pequeño */
+}
+.login-container form{
+    width: 300px;
+    margin: 5px;
+}
+.login-container h2{
+    font-size: 45px;
+    font-weight: 300;
+}
 /* Estilos del formulario */
 .form-group {
+    max-width: 350px;
     margin-bottom: 20px;
 }
 
 .form-group label {
-    display: block;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 5px;
 }
 
 .form-group input {
     width: 100%;
+    display: block;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 .remember-me {
-    display: flex;
-    align-items: center;
+    display: flex; /* Usa flexbox para alinearlo en línea */
+    align-items: center; /* Alinea verticalmente los elementos */
     margin-bottom: 10px;
 }
 
 .remember-me input[type="checkbox"] {
-    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px; 
 }
 
 .forgot-password {
-    color: #326cd6;
+    color: #5c7ce4;
     text-decoration: none;
     font-size: 14px;
 }
 
 .btn-login {
-    background-color: #bc88e8;
+    background-color: #329cf3;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -63,3 +81,14 @@ body {
     cursor: pointer;
     width: 100%;
 }
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5); /* Comienza más pequeño */
+        opacity: 0; /* Comienza invisible */
+    }
+    100% {
+        transform: scale(1); /* Tamaño normal */
+        opacity: 1; /* Totalmente visible */
+    }
+}
+
